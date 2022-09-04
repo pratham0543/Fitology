@@ -27,6 +27,7 @@
 .nav-content{
     background-color: var(--dark-font);
     padding-top: 0px;
+    padding-bottom: 2px;
 }
 .navbar .nav-ul ul{
     margin-left: auto;
