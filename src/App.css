@@ -13,17 +13,3 @@ body{
  
 
 }
-.heading{
-  padding:20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.left-quote, .right-quote{
-  font-size:2em;
-  
-}
-.right-quote{
-position: relative;
-top:58px;
-}

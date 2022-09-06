@@ -1,0 +1,52 @@
+.start{
+    height:400px;
+    background: url('./gym.jpg');
+    background-position: center;
+    background-size: cover;
+background-attachment: fixed;
+filter: blur(1.5px);
+
+}
+.heading{
+    padding:20px;
+    padding-bottom: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+    
+  }
+  .left-quote, .right-quote{
+    font-size:2em;
+    
+  }
+  .right-quote{
+  position: relative;
+  top:58px;
+  }
+
+.start_para{
+    color:white;
+    font-size:1.1em;
+    font-weight: 600;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  top: 18%;
+
+  }
+  .start_para p{
+    width:70%;
+    color:white;
+    font-size:1.1em;
+    font-weight: 500;
+  top: 18%;
+  }
+  .start_btn{
+    background-color: #7B594A;
+    border:0px ;
+  
+  }
+.start_btn:hover{
+    border:1px solid white !important;
+}

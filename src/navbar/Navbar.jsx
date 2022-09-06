@@ -32,6 +32,7 @@ return(
         <NavElements text="Plans"/>
         <NavElements text="Exercises"/>
         <NavElements text="Blogs"/>
+        <NavElements text="Calculators"/>
         <NavElements text="Contact Us"/>
       </ul>
     </div>

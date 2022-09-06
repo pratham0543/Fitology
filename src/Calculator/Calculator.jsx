@@ -11,7 +11,7 @@ function Calculator(){
     }
     return(
             <div className="main-container">
-                <h1 className="calculator-heading">TOOLS YOU MIGHT NEED</h1>
+                <h2 className="calculator-heading">TOOLS YOU MIGHT NEED</h2>
                 <h4 className="calculator-subheading1">Trying to lose weight, tone up, lower your BMI, or invest in your overall health?</h4>
                 <h4 className="calculator-subheading2">We give you the right features to hit your goals.</h4>
                 <div className="item-container">
