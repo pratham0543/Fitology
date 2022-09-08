@@ -1,6 +1,7 @@
 import './navbar.css';
 import LoginModal from './LoginModal';
 import NavElements from './NavElements';
+
 function Navbar(){
 return(
     <div className="main">
@@ -26,6 +27,7 @@ return(
     <div className="collapse navbar-collapse nav-ul" id="navbarNav">
       <ul className="navbar-nav">
         {/* Provide with href links in props */}
+
        <NavElements text="Home"/>
        <NavElements text="Nutriton"/>
        <NavElements text="Sports"/>
