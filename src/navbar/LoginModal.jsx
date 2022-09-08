@@ -1,22 +1,22 @@
 const LoginModal=()=>{
     return(
-        <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <div class="myform">
-                        <h1 class="text-center">Login Form</h1>
+        <div className="modal fade" id="ModalForm" aria-labelledby="ModalFormLabel" aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content">
+                <div className="modal-body">
+                    <button type="button" className="btn-close btn-close-white" aria-label="Close"></button>
+                    <div className="myform">
+                        <h1 className="text-center">Login Form</h1>
                         <form>
-                            <div class="mb-3 mt-4">
-                                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                            <div className="mb-3 mt-4">
+                                <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
+                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"/>
+                            <div className="mb-3">
+                                <label for="exampleInputPassword1" className="form-label">Password</label>
+                                <input type="password" className="form-control" id="exampleInputPassword1"/>
                             </div>
-                            <button type="submit" class="btn btn-light mt-3" >LOGIN</button>
+                            <button type="submit" className="btn btn-light mt-3" >LOGIN</button>
                             <p>Not a member? <a href="#">Signup now</a></p>
                         </form>
                     </div>

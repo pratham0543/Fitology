@@ -18,18 +18,13 @@ a{
     margin-top: 50px;
     text-align: center;
 }
-.items{
-    cursor: -webkit-grab; 
-    cursor: grab;
+.items{ 
+    cursor: pointer;
     position: relative;
     padding: 30px 0px;
-    width: 22%;
-    margin: 10px 10px;
-    box-shadow: 0 20px 25px rgb(0,0,0,20%);
-    transition: .3s ease-in-out;
-}
-.items:hover{
-    transform: translateY(-15px);
+    width: 25%;
+    margin: 10px 40px;
+    overflow: hidden;
 }
 .items.a{
   position: absolute;
@@ -39,23 +34,36 @@ a{
   height: 100%; 
 
 }
-.item1{
-    height: 70px;
-    width: 70px;
+.item-container1{
+    height: 62%;
+    width: 100%;
     left: 20px;
     margin-bottom: 30px;
+    overflow: hidden;
+}
+.item1{
+    height: 100%;
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+.item1:hover{
+    transform: scale(1.05);
 }
 .item2{
-    /* margin: 0px 12em; */
-    top: 10px;
-    height: 60px;
-    width: 60px;
-    margin-bottom: 40px;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+.item2:hover{
+    transform: scale(1.05);
 }
 .item3{
-    height: 70px;
-    width: 70px;
-    margin-bottom: 30px;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+.item3:hover{
+    transform: scale(1.05);
 }
 .calculator-heading{
     text-align: center;
@@ -78,10 +86,13 @@ a{
     font-size: 20px;
     font-weight: bold;
     color:var(--dark-font);
-    margin-bottom: 20px;
 }
-.card-heading2{
-    font-size: 15px;
-    color: var(--dark-font);
-    line-height: 1.5;
+.items-button{
+    border-radius: 0px;
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    font-weight: bold;
 }
+
+  
