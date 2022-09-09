@@ -40,6 +40,7 @@ a{
     left: 20px;
     margin-bottom: 30px;
     overflow: hidden;
+    margin-top: -50px;
 }
 .item1{
     height: 100%;
@@ -70,7 +71,7 @@ a{
     font-weight: bold;
     font-size: 35px;
     color:var(--dark-font);
-    margin-bottom:20px ;
+    margin-bottom:10px ;
 }
 .calculator-subheading1{
     text-align: center;
