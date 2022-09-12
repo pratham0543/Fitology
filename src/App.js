@@ -4,6 +4,7 @@ import Calculator from './Calculator/Calculator.jsx';
 import Start from './Getstarted/Start.jsx';
 import Footer from './footer/Footer.jsx';
 import Testi from './Testimonials/Testi.jsx';
+import Blog from './Blogs/Blog.jsx'
 import { Component } from 'react';
 
 class App extends Component{
@@ -26,6 +27,7 @@ class App extends Component{
         {/* Calculator End */}
         {/* Testimonials */}
         <Testi/>
+        <Blog/>
       </>
     )
   }
