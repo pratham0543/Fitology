@@ -11,7 +11,7 @@ function Calculator(){
         window.location.href = "#";
     }
     return(
-            <div className="main-container">
+            <div className="calculator-parent-container">
                 <h2 className="calculator-heading">SERVICES</h2>
                 <h4 className="calculator-subheading1">Trying to lose weight, tone up, lower your BMI, or invest in your overall health?</h4>
                 <h4 className="calculator-subheading2">We give you the right features to hit your goals.</h4>

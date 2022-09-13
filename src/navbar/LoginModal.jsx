@@ -17,7 +17,7 @@ const LoginModal=()=>{
                                 <input type="password" className="form-control" id="exampleInputPassword1"/>
                             </div>
                             <button type="submit" className="btn btn-light mt-3" >LOGIN</button>
-                            <p>Not a member? <a href="#">Signup now</a></p>
+                            <p className="login_para">Not a member? <a href="#">Signup now</a></p>
                         </form>
                     </div>
                 </div>

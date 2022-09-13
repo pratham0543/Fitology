@@ -1,18 +1,18 @@
-
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 :root{
   --dark-font:#091540;
   --light-font:#F8F7F9;
-  --font-fam:'Lato', sans-serif;;
-}
+  --font-fam:'Ubuntu', sans-serif;;
+} */
 .navbar{
     /* padding-left:100px ; */
     padding-top:30px;
 }
 
-.navbar-brand{
+.navbar-brand h2{
     font-weight: 900;
     color:var(--dark-font);
-    font-size:30px;
+    /* font-size:30px; */
     margin-right: 50px;
    
 }
@@ -23,6 +23,9 @@
     background-color: var(--dark-font);
     color: #F8F7F9;
     /* margin-right:40px; */
+}
+.navbar #login-btn:hover{
+  background-color: var(--secondary-hover-color);
 }
 .nav-content{
     background-color: var(--dark-font);
@@ -35,12 +38,13 @@
 }
 .nav-content ul li{
     margin-right:10px;
+    font-size:1.1em;
 }
 .nav-content ul li a{
     color:var(--light-font);
 }
 .nav-content ul li a:hover{
-    color:white;
+    color:#03DAC6;
 }
 .toggle_button{
     left: 50px;
@@ -126,15 +130,15 @@
   .myform .btn:hover {
     background-color: inherit;
   }
-  p {
+  .login_para {
     text-align: center;
     padding-top: 2em;
     /* color: var(--dark-font); */
   }
-  p a {
+  .login_para a {
     color: #e1e1e1;
     text-decoration: none;
   }
-  p a:hover {
+  .login_para a:hover {
     color: var(--dark-font);
   }

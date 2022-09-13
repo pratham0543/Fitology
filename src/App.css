@@ -2,9 +2,17 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 :root{
-  --dark-font:#091540;
-  --light-font:#F8F7F9;
+  --dark-font:#151515;
+  --light-font:#FFFFFF;
   --font-fam:'Ubuntu', sans-serif;
+  --secondary-hover-color:#292929;
+  --purple:#9E55FC;
+  --green:#03DAC6;
+  --grey-card:#1E1E1E;
+  --dark-shadow:  0px 16px 24px 2px hsla(0,0%,0%,0.14), 
+  0px 6px 30px 5px hsla(0,0%,0%,0.12), 
+  0px 8px 10px -5px hsla(0,0%,0%,0.2);
+
 }
 
 
@@ -12,4 +20,8 @@ body{
   background-color: #F8F7F9;
   font-family: var(--font-fam);
  
+}
+
+a{
+  text-decoration: none;
 }

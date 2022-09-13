@@ -1,6 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 :root{
   --dark-font:#091540;
   --light-font:#F8F7F9;
-  --font-fam:'Lato', sans-serif;;
+  --font-fam:'Ubuntu', sans-serif;
+} */
+.footer{
+  background-color: var(--dark-font);
+  color:white;
+
+}
+
+.footer .navbar h2, .footer .navbar i{
+  color:white;
+}
+.footer .navbar h2{
+  font-weight: 600;
+  color: var(--purple);
+}
+.footer .footer-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .footer-content .footer_links{
+  width: 60%;
+ 
+}
+.footer .footer-content .footer_links ul li{
+  color: var(--green);
+  cursor: pointer;
+}
+.footer .footer-content .footer_links  i{
+  color: inherit;
+  font-size:1.1em;
+}
+.footer .footer-content .footer_links ul li:hover {
+  color:white !important;
+}
+.footer .footer-content .footer_links  a{
+  color:white;
+}
+.footer .footer-content .footer_links .basic-info,.footer .footer-content .footer_links .calculators,.footer .footer-content .footer_links .features{
+  display:inline-block;
+}
+.footer-link-headings{
+  margin-left:2rem;
+  letter-spacing: normal;
+  color:var(--green)
+}
+
+
+.footer .footer-content .personel_plan{
+  width: 27%;
+  margin-right:8rem !important;
+ 
+}
+.footer .footer-content .personel_plan h3{
+  color: var(--purple);
+}
+.footer .footer-content .personel_plan input{
+  background-color: white;
+}
+.footer .footer-content .personel_plan button{
+  background-color: var(--purple);
+  height:40px;
+
+}
+.align{
+  transform: translateY(30%);
+}
+.footer hr{
+  margin-bottom:5px
+}
+#footer-para{
+  margin:0;
+  font-size:14px
 }
