@@ -33,8 +33,9 @@ class Navbar extends Component {
               <span><i className="fa-solid fa-bars"></i></span>
             </button>
             <div className="collapse navbar-collapse nav-ul" id="navbarNav">
-              <ul className="navbar-nav">
+              <ul className="navbar-nav navbar-responsive">
                 {/* Provide with href links in props */}
+      
                 {this.state.navtext.map((text, index) =>
                   <NavElements text={text} key={index} />
 
