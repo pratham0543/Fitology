@@ -5,7 +5,7 @@
   --card-heading-color:#0066EE;
   --font-fam:'Ubuntu', sans-serif;;
 } */
-.calculator-parent-container{
+.homeservices-parent-container{
     margin-top: 50px;
 }
 /* a{
@@ -66,19 +66,19 @@
 .item3:hover{
     transform: scale(1.05);
 }
-.calculator-heading{
+.homeservices-heading{
     text-align: center;
     font-weight: bold;
     font-size: 35px;
     color:var(--dark-font);
     margin-bottom:10px ;
 }
-.calculator-subheading1{
+.homeservices-subheading1{
     text-align: center;
     font-size: 17.5px;
     color:var(--dark-font);
 }
-.calculator-subheading2{
+.homeservices-subheading2{
     text-align: center;
     font-size: 17.5px;
     color:var(--dark-font);

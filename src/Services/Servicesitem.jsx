@@ -1,4 +1,4 @@
-function Calculatoritem(props){
+function Servicesitem(props){
     return(
         <div className="items" onClick={props.click}>
                 <div className="item-container1"><img className={props.classname} src={props.imageurl}/></div>
@@ -7,4 +7,4 @@ function Calculatoritem(props){
         </div>
     )
 }
-export default Calculatoritem;
+export default Servicesitem;

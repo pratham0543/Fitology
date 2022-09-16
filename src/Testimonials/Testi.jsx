@@ -4,7 +4,7 @@ const Testi = () => {
 
   return (
     <>
-      <h2 className="calculator-heading testi-heading">OUR CLIENT TESTIMONIALS</h2>
+      <h2 className="homeservices-heading testi-heading">OUR CLIENT TESTIMONIALS</h2>
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <Caritems active="active" smile="fa-regular fa-face-laugh-beam"></Caritems>

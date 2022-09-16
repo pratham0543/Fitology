@@ -5,7 +5,7 @@
   --card-heading-color:#0066EE;
   --font-fam:'Ubuntu', sans-serif;;
 } */
-.blog-parent-container{
+.home-blog-parent-container{
     background-color: var(--dark-font);
     color:white;
     /* padding-top: 50px; */
@@ -13,7 +13,7 @@
     margin-top:50px;
     
 }
-.blog-parent-container::before{
+.home-blog-parent-container::before{
     content: " ";
     background-color: var(--dark-font);
     display: block;
@@ -24,21 +24,21 @@
 }
 
 
-.blog-container{
+.home-blog-container{
     margin-top: 50px;
     
 }
 /* a{
     text-decoration: none;
 } */
-.blog-container{
+.home-blog-container{
     display: flex;
     flex-wrap: wrap;
     justify-content:center;
     margin-top: 50px;
     text-align: left;
 }
-.blog-items{ 
+.home-blog-items{ 
     cursor: pointer;
     position: relative;
     width: 18%;
@@ -51,7 +51,7 @@
     transition: 0.5s transform ease;
 }
 
-.blog-items.a{
+.home-blog-items.a{
   position: absolute;
   top: 0;
   left: 0;
@@ -59,54 +59,54 @@
   height: 100%; 
 
 }
-.blog-item-container1{
+.home-blog-item-container1{
     height: 57%;
     width: 100%;
     left: 20px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
-.blog-item1{
+.home-blog-item1{
     height: 100%;
     width: 100%;
     transition: .5s ease-in-out;
     border-radius: 10px 10px 0px 0px;
     /* object-fit: cover; */
 }
-.blog-item2{
+.home-blog-item2{
     height: 100%;
     width: 100%;
     transition: .5s ease-in-out;
     border-radius: 10px 10px 0px 0px;
 }
-.blog-item3{
+.home-blog-item3{
     height: 100%;
     width: 100%;
     transition: .5s ease-in-out;
     border-radius: 10px 10px 0px 0px;
 }
-.blog-items:hover
+.home-blog-items:hover
 {
     transform: scaleX(1.1) scaleY(1.1);
 }
-.blog-heading{
+.home-blog-heading{
     text-align: center;
     font-weight: bold;
     font-size: 35px;
    text-transform: uppercase;
     margin-bottom:10px ;
 }
-.blog-subheading1{
+.home-blog-subheading1{
     text-align: center;
     font-size: 17.5px;
     
 }
-.blog-subheading2{
+.home-blog-subheading2{
     text-align: center;
     font-size: 17.5px;
    
 }
-.blog-card-heading1{
+.home-blog-card-heading1{
     position: relative;
     height: 10px;
     font-size: 17px;
@@ -115,7 +115,7 @@
     margin-left: 13px;
     top: 15px;
 }
-.blog-span{
+.home-blog-span{
     color: #9E55FC;
     position: relative;
     top: 28px;
