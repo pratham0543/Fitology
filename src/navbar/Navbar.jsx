@@ -6,7 +6,7 @@ class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      navtext: ['Home', 'Nutrition', 'Sports', 'Plans', 'Exercises', 'Blogs', 'Calculators', 'Contact Us'],
+      navtext: ['Home', 'Nutrition','Get Transformed', 'Exercises', 'Blogs', 'Calculators', 'Contact Us'],
       modalshow:true
     }
   }
