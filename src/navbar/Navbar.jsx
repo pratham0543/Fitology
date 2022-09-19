@@ -6,10 +6,19 @@ class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      navtext: ['Home', 'Nutrition', 'Sports', 'Plans', 'Exercises', 'Blogs', 'Calculators', 'Contact Us']
+      navtext: ['Home', 'Nutrition', 'Sports', 'Plans', 'Exercises', 'Blogs', 'Calculators', 'Contact Us'],
+      modalshow:true
     }
   }
-  render() {
+  onhidehandler=()=>{
+    let statevalue=this.state.modalshow;
+    this.setState({modalshow:!statevalue})
+  }
+  render(){
+    let loginmodal=(null);
+    if(this.state.modalshow){
+        loginmodal=(<LoginModal />)
+    }
     return (
       <div className="main">
         <nav className="navbar bg-light">
@@ -21,7 +30,8 @@ class Navbar extends Component {
             <button type="button" id="login-btn" className="btn btn-primary login-button" data-bs-toggle="modal" data-bs-target="#ModalForm">Login/Sign Up</button>
 
             {/* login modal */}
-            <LoginModal />
+            {loginmodal}
+            {/* <LoginModal />}}
             {/* login modal finished */}
           </div>
         </nav>
