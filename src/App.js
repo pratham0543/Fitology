@@ -1,4 +1,4 @@
-import Navbar from './Navbar/Navbar.jsx';
+import Navbar from './navbar/Navbar.jsx';
 import './App.css';
 import HomeServices from './Services/HomeSerivces.jsx';
 import Start from './Getstarted/Start';
