@@ -4,7 +4,7 @@ const LoginModal=()=>{
             <div className="modal-dialog modal-dialog-centered">
             <div className="modal-content">
                 <div className="modal-body">
-                    <button type="button" className="btn-close btn-close-white close-button" aria-label="Close"><a href="./Navbar.jsx">click</a></button>
+                    <button type="button" className="btn-close btn-close-white close-button" aria-label="Close"><a href="./Navbar.jsx"></a></button>
                     <div className="myform">
                         <h1 className="text-center">Login Form</h1>
                         <form>

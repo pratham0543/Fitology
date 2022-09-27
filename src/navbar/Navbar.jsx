@@ -2,6 +2,7 @@ import './navbar.css';
 import LoginModal from './LoginModal';
 import NavElements from './NavElements';
 import { Component } from 'react';
+
 class Navbar extends Component {
   constructor(props) {
     super(props)
@@ -10,10 +11,10 @@ class Navbar extends Component {
       modalshow:true
     }
   }
-  onhidehandler=()=>{
-    let statevalue=this.state.modalshow;
-    this.setState({modalshow:!statevalue})
-  }
+  // onhidehandler=()=>{
+  //   let statevalue=this.state.modalshow;
+  //   this.setState({modalshow:!statevalue})
+  // }
   render(){
     let loginmodal=(null);
     if(this.state.modalshow){
