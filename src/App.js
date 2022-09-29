@@ -1,11 +1,8 @@
-import Navbar from './navbar/Navbar.jsx';
+import Navbar from './navbar/Navbar';
 import './App.css';
-import HomeServices from './Services/HomeSerivces.jsx';
-import Start from './Getstarted/Start';
 import Footer from './footer/Footer';
-import Testi from './Testimonials/Testi';
-import HomeBlog from './HomeBlogs/HomeBlog.jsx';
 import { Component } from 'react';
+import Home from './components/Home/Home';
 
 class App extends Component{
   constructor(props){
@@ -17,10 +14,7 @@ class App extends Component{
       <>
 
         <Navbar/>
-        <Start/>
-        <HomeServices/>
-        <HomeBlog/>
-        <Testi/>
+       <Home/>
         <Footer/>
       </>
     )
