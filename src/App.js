@@ -1,22 +1,25 @@
 import Navbar from './navbar/Navbar';
 import './App.css';
 import Footer from './footer/Footer';
+
 import { Component } from 'react';
 import Home from './components/Home/Home';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
 
 class App extends Component{
-  constructor(props){
-    super(props);
-  }
+
   render()
   {
     return(
-      <>
-
+      
+     <BrowserRouter>
         <Navbar/>
-       <Home/>
+        <Routes>
+            <Route path="/"  element={<Home/>}  />
+        </Routes>
         <Footer/>
-      </>
+        </BrowserRouter>
+
     )
   }
 

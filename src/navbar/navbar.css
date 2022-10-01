@@ -56,27 +56,22 @@
 }
 .toggle_button{
     left: 50px;
-    color:white;
+   
 }
-.icon_toggle{
-    color:var(--light-font);
+.toggle_button span i{
+  color:white
 }
-.icon-button-toggle{
-    position: relative;
-    top: -2.5em;
-    left: -17em;
-    border: none;
-}
+
+
  .icon-button-toggle:focus {
-    border: none;
     box-shadow: none;
   }
-.fa-solid{
+/* .fa-solid{
     color :var(--dark-font);
-}
-.navbar-responsive{
+} */
+/* .navbar-responsive{
   display: absolute;
-}
+} */
 .nav-link{
   text-align: center;
 }
@@ -159,3 +154,70 @@
     transition: .1s ease-in-out;
   }
 
+.offcanvas{
+  background-color: var(--dark-font);
+  justify-content: space-between;
+}
+.offcanvas.show{
+  font-size:28px;
+  
+}
+
+.offcanvas-body{
+  justify-content: center;
+}
+.offcanvas.show .offcanvas-body{
+  font-size:32px;
+
+}
+.nav-link:focus{
+  color:var(--green);
+}
+
+.offcanvas #login-btn{
+display:none;
+
+}
+.offcanvas.show #login-btn{
+
+  display: block;
+
+}
+
+.offcanvas.show .navbar-brand h2{
+  color:var(--purple);
+}
+.offcanvas.show .navbar-brand h2 i{
+  color: white;
+}
+.offcanvas.show .offcanvas-body .navbar-nav li{
+  margin-bottom: 0.5rem;
+  border-bottom:1px solid white;
+  font-size:0.5em;
+}
+.offcanvas.show .offcanvas-body .navbar-nav li:hover{
+  background-color: var(--grey-card);
+}
+.offcanvas .offcanvasFooter
+{
+  display: none;
+}
+.offcanvas.show .offcanvasFooter{
+  border-top: 0.5px solid white;
+  text-align: center;
+  padding-top:5px;
+  margin-left:auto;
+  margin-right:auto;
+  width:90%;
+  display: block;
+  
+}
+.offcanvas.show .offcanvasFooter p{
+  /* font-size:0.8rem; */
+  font-size:0.5em;
+  margin:0;
+}
+.offcanvas.show .offcanvas-header .btn{
+    font-size:0.7em;
+    color:white
+}
