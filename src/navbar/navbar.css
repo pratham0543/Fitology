@@ -30,7 +30,11 @@
 .navbar #login-btn{
     background-color: var(--dark-font);
     color: #F8F7F9;
-    /* margin-right:40px; */
+   
+  width: 150px ;
+  font-size: calc(14px + (20 - 14)*((100vw - 200px) / (1600 - 200)));
+
+    
 }
 .navbar #login-btn:hover{
   background-color: var(--secondary-hover-color);
@@ -220,4 +224,20 @@ display:none;
 .offcanvas.show .offcanvas-header .btn{
     font-size:0.7em;
     color:white
+}
+
+
+@media  screen and (max-width:768px){
+  .navbar #login-btn{
+    width: 18%;
+    font-size: calc(12px + (20 - 12)*((100vw - 200px) / (1600 - 200)));
+  }
+  
+}
+@media  screen and (max-width:768px){
+  .navbar #login-btn{
+    width: 28%;
+   
+  }
+  
 }

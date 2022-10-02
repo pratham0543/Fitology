@@ -10,6 +10,7 @@
 
 }
 
+
 .footer .navbar h2, .footer .navbar i{
   color:white;
 }
@@ -93,6 +94,35 @@
         margin-left:auto;
         margin-right:auto;
   }
+  .footer .footer-content .personel_plan input
+  {
+    font-size: calc(16px + (20 - 16)*((100vw - 200px) / (1600 - 200)));
+    height:40px;
+  }
 
+}
+@media screen and (max-width:500px)
+{
+  .footer-link-headings{
+    font-size: calc(14px + (20 - 14)*((100vw - 200px) / (1600 - 200)));
 
+  }
+
+  .footer .footer-content .footer_links ul li{
+    font-size: calc(14px + (20 - 14)*((100vw - 200px) / (1600 - 200)));
+    margin-bottom:12px !important; 
+  }
+  .footer .footer-content .footer_links{
+    flex-direction: column;
+    
+  }
+  .footer .footer-content .personel_plan input{
+    font-size: calc(14px + (20 - 14)*((100vw - 200px) / (1600 - 200)));
+  
+  }
+  .footer .footer-content .personel_plan .input-group
+  {
+    width: 50%;
+    
+  }
 }
