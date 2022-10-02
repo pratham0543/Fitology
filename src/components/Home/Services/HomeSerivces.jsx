@@ -8,8 +8,8 @@ function HomeServices(){
     return(
             <div className="homeservices-parent-container">
                 <h2 className="homeservices-heading">SERVICES</h2>
-                <h4 className="homeservices-subheading1">Trying to lose weight, tone up, lower your BMI, or invest in your overall health?</h4>
-                <h4 className="homeservices-subheading2">We give you the right features to hit your goals.</h4>
+                <p className="homeservices-subheading1">Trying to lose weight, tone up, lower your BMI, or invest in your overall health?</p>
+                <p className="homeservices-subheading2">We give you the right features to hit your goals.</p>
                 <div className="item-container">
 
                 <Servicesitem  classname="item1" imageurl={img1} headingcontent="TRANSFORMATION PLAN" buttoncontent="GET NOW >"/>

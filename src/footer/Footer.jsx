@@ -38,8 +38,10 @@ const Footer = () => {
           <div className="align">
             <h3>Get Personalized Plan</h3>
             <div className="input-group mb-3">
-              <input type="text" className="form-control p-2 rounded-start" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2" />
-              <button className="btn " type="button" id="button-addon2"><i class="fa-solid fa-arrow-right"></i></button>
+           
+                <input type="text" className="form-control p-2 rounded-start" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2" />
+                <button className="btn " type="button" id="button-addon2"><i class="fa-solid fa-arrow-right"></i></button>
+  
             </div>
           </div>
         </div>

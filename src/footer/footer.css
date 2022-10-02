@@ -24,6 +24,7 @@
 }
 .footer .footer-content .footer_links{
   width: 60%;
+  display: flex;
  
 }
 .footer .footer-content .footer_links ul li{
@@ -40,9 +41,7 @@
 .footer .footer-content .footer_links  a{
   color:white;
 }
-.footer .footer-content .footer_links .basic-info,.footer .footer-content .footer_links .calculators,.footer .footer-content .footer_links .features{
-  display:inline-block;
-}
+
 .footer-link-headings{
   margin-left:2rem;
   letter-spacing: normal;
@@ -52,7 +51,7 @@
 
 .footer .footer-content .personel_plan{
   width: 27%;
-  margin-right:8rem !important;
+ 
  
 }
 .footer .footer-content .personel_plan h3{
@@ -75,4 +74,25 @@
 #footer-para{
   margin:0;
   font-size:14px
+}
+
+
+
+@media screen and (max-width:768px)
+{
+  .footer .footer-content .footer_links{
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer .footer-content .personel_plan{
+    width: 100%;
+    text-align: center;
+  }
+  .footer .footer-content .personel_plan .input-group{
+        width:40%;
+        margin-left:auto;
+        margin-right:auto;
+  }
+
+
 }

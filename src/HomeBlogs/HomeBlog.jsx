@@ -7,8 +7,8 @@ function HomeBlog(){
             <div className="home-blog-parent-container">
                
                 <h2 className="home-blog-heading">Inspirations</h2>
-                <p className="home-blog-subheading1">Get nutritionist-approved recipes and motivational workout tips from Fitology experts.</p>
-                <p className="home-blog-subheading2">We give you the right features to hit your goals.</p>
+                <h4 className="home-blog-subheading1">Get nutritionist-approved recipes and motivational workout tips from Fitology experts.</h4>
+                <h4 className="home-blog-subheading2">We give you the right features to hit your goals.</h4>
                 <div className="home-blog-container">
 
                 <BlogItem classname="home-blog-item1" imageurl={require('./nutrition.png')} blogheadingcontent="Healthy Breakfast Recipes in 15 Minutes">
