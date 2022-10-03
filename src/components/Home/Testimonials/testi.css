@@ -5,6 +5,11 @@
     font-size: inherit;
 
 }
+.homeservices{
+    padding-top:50px;
+    background-color: white;
+    padding-bottom:40px;
+}
 .carousel-item .test_pic{
     font-size:3em;
     padding-top:0
@@ -18,9 +23,7 @@
 .carousel-control-next-icon, .carousel-control-prev-icon{
     filter:invert(100%);
 }
-.testi-heading{
-    margin-top:3em;
-}
+
 .star{
     display: block;
 }

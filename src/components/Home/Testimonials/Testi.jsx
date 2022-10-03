@@ -3,7 +3,7 @@ import Caritems from './Caritems';
 const Testi = () => {
 
   return (
-    <>
+    <div className='homeservices'>
       <h2 className="homeservices-heading testi-heading">OUR CLIENT TESTIMONIALS</h2>
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
@@ -21,7 +21,7 @@ const Testi = () => {
           <p className="visually-hidden">Next</p>
         </button>
       </div>
-    </>
+    </div>
 
 
 

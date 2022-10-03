@@ -13,7 +13,6 @@ function HomeBlog(){
 
                 <BlogItem classname="home-blog-item1" imageurl={require('./nutrition.png')} blogheadingcontent="Healthy Breakfast Recipes in 15 Minutes">
                 </BlogItem>
-
                 <BlogItem classname="home-blog-item2" imageurl={require('./yoga.png')} blogheadingcontent="Health Benefits Of Yoga">
                 </BlogItem>
 

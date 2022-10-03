@@ -6,7 +6,19 @@
 } */
 .homeservices-parent-container {
     margin-top: 50px;
+    background-color: white;
+    padding-top:50px;
 }
+.homeservices-parent-container:after{
+    content: " ";
+    background-color: var(--dark-font);
+    display: block;
+    height: 85px;
+    transform: skewY(2deg);
+    position: relative;
+    bottom: -60px;
+}
+
 
 /* a{
     text-decoration: none;
