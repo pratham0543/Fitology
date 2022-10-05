@@ -1,0 +1,67 @@
+.nutrition
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding:20px 0px;
+}
+
+.nutrition .img1
+{
+    
+    width: 20%;
+    --animate-duration: 1.5s;
+}
+.nutrition .img2
+{
+    width:28%;
+    --animate-duration: 1.5s;
+}
+
+.nutrition .img1 img,.nutrition .img2 img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.nutrition .nutrition-content
+{
+    width:50%;
+    text-align: center;
+    padding-top:50px;
+}
+.nutrition .nutrition-content h3{
+    font-weight: 600;
+}
+.nutrition .nutrition-content .input-group input
+{
+    padding: 10px 0px 10px 15px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 20px;
+    border-color: white;   
+}
+.nutrition .nutrition-content .input-group input:focus
+{
+   
+    box-shadow: none;
+}
+.nutrition .nutrition-content .input-group .input-group-text
+{
+    background-color: white;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 20px;
+    border-color: white;
+    width:7%;
+    padding: 5px;
+    transition:all 0.5s ease;
+    justify-content: center;
+}
+.nutrition .nutrition-content .input-group .input-group-text:hover
+{
+    background-color: var(--dark-font);
+    color:white;
+}
+
+.nitem{
+    width: 80%;
+}

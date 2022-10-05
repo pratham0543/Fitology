@@ -7,7 +7,7 @@ class Navbar extends Component {
 
   render() {
 
-    return (<>
+    return (
       <div className="main">
         <nav className="navbar bg-light">
           <div className="container-fluid ">
@@ -28,13 +28,13 @@ class Navbar extends Component {
             <button className="icon-button-toggle navbar-toggler toggle_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasExample">
               <span><i className="fa-solid fa-bars"></i></span>
             </button>
-            <div className="offcanvas offcanvas-start " data-bs-scroll="true" 
+            <div className="offcanvas offcanvas-start "  
             tabIndex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
               <div className="offcanvas-header">
                 <a className="navbar-brand" href="./index.html">
                   <h2> <i className="fa-solid fa-dumbbell me-2"></i> FITOLOGY</h2>
                 </a>
-                <button type="button" className="btn" data-bs-dismiss="offcanvas" ><i class="fa-solid fa-xmark"></i></button>
+                <button type="button" className="btn" data-bs-dismiss="offcanvas" ><i className="fa-solid fa-xmark"></i></button>
               </div>
               <div className="offcanvas-body">
                 <ul className="navbar-nav ">
@@ -42,22 +42,22 @@ class Navbar extends Component {
                     <a className="nav-link" href="/">Home</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/">Nutrition</a>
+                    <Link className="nav-link" to="/nutrition" >Nutrition</Link>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Get Transformed</a>
+                    <a className="nav-link" href="/">Get Transformed</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Exercises</a>
+                    <a className="nav-link" href="/">Exercises</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Blogs</a>
+                    <a className="nav-link" href="/">Blogs</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Calculators</a>
+                    <a className="nav-link" href="/">Calculators</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Contact Us</a>
+                    <a className="nav-link" href="/">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -69,7 +69,7 @@ class Navbar extends Component {
           </div>
         </nav>
       </div>
-    </>
+    
     )
   }
 }

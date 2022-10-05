@@ -41,10 +41,10 @@
 
 .start_para{
     color:white;
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: center;
-  top:15vw;
+  top:4vw;
 
   }
   .start_para p{
