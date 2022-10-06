@@ -42,7 +42,7 @@ class Navbar extends Component {
                     <a className="nav-link" href="/">Home</a>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to="/nutrition" >Nutrition</Link>
+                    <div data-bs-dismiss="offcanvas"><Link className="nav-link" to="/nutrition" >Nutrition</Link></div>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="/">Get Transformed</a>

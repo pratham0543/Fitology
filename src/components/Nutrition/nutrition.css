@@ -65,3 +65,61 @@
 .nitem{
     width: 80%;
 }
+
+
+@media  screen and (max-width:768px) {
+    .nutrition .img2 {
+        width: 30%;
+        height: 130px;
+        align-self: center;
+    }
+    
+
+
+}
+
+@media screen and (max-width:745px)
+{
+    .nutrition .img1 img{
+        height: 83%;
+        align-self: center;
+    }
+    .nutrition .nutrition-content .input-group .input-group-text
+    {
+        width: 11%;
+    }
+    
+}
+
+@media screen and (max-width:570px)
+{
+    .nutrition .img2{
+        display:none;
+    }
+    .nutrition .img1 img {
+        height: 87%;
+    }
+    .nutrition .img1{
+        width:37%
+    }
+}
+
+@media screen and (max-width:500px)
+{
+    .nutrition .nutrition-content
+    {
+        width:55%
+    }
+}
+
+@media screen and (max-width:414px)
+{
+    .nutrition{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .nutrition .img1 {
+        width: 66%;
+    }
+}
