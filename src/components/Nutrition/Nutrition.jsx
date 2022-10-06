@@ -8,7 +8,12 @@ import axios from 'axios';
 class Nutrition extends Component {
   constructor() {
     super()
-    this.state={};
+    this.state={
+        nutritionInfo:null,
+        name:null
+
+
+    };
   }
  
   onSubmitHandler=(e)=>
@@ -27,10 +32,12 @@ class Nutrition extends Component {
     axios.request(options)
     .then((response) => {
       console.log(response.data);
+      this.setState({nutritionInfo:response.data,name:inp.value});
     })
     .catch((error) => {
       console.error(error);
     });
+   
   }
 
 
@@ -38,6 +45,22 @@ class Nutrition extends Component {
 
  
   render() {
+   let ni=<p></p>
+  //   console.log(this.state);
+  //   if(this.state.nutritionInfo===null)
+  //   {
+  //     ni=<p></p>
+  //   }
+    if(this.state.nutritionInfo!==null){
+      ni=
+      
+      (
+      this.state.nutritionInfo.map((item)=>
+      <NutritionItem name={item.name} nutrition={item}/>
+      )
+      )
+    }
+
     return (
 
       <>
@@ -61,8 +84,9 @@ class Nutrition extends Component {
             <img src={img2} alt="..." />
           </div>
         </div>
-        <NutritionItem/>
-
+      
+        {/* <NutritionItem nutrition={this.state.nutritionInfo}/> */}
+        {ni}
       </>
 
 
