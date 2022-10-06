@@ -10,14 +10,15 @@ class Nutrition extends Component {
     super()
     this.state={
         nutritionInfo:null,
-        name:null
-
+        name:null,
+        showLoader:false
 
     };
   }
  
   onSubmitHandler=(e)=>
   {
+    this.setState({showLoader:true});
     const inp=document.querySelector('.nutrition-inp');
     const options = {
       method: 'GET',
@@ -31,8 +32,9 @@ class Nutrition extends Component {
     
     axios.request(options)
     .then((response) => {
+      
       console.log(response.data);
-      this.setState({nutritionInfo:response.data,name:inp.value});
+      this.setState({nutritionInfo:response.data,name:inp.value,showLoader:false});
     })
     .catch((error) => {
       console.error(error);
@@ -47,13 +49,16 @@ class Nutrition extends Component {
   render() {
    let ni=<p></p>
   //   console.log(this.state);
-  //   if(this.state.nutritionInfo===null)
-  //   {
-  //     ni=<p></p>
-  //   }
-    if(this.state.nutritionInfo!==null){
+    if(this.state.showLoader)
+    {
+      ni=(<div className="text-center">
+      <div className="spinner-border text-dark" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
+    </div>)
+    }
+    if(this.state.nutritionInfo!==null && this.state.showLoader===false){
       ni=
-      
       (
       this.state.nutritionInfo.map((item)=>
       <NutritionItem name={item.name} nutrition={item}/>
