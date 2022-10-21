@@ -1,0 +1,39 @@
+.label-BMR{
+    color: var(--dark-font);
+    text-align: left;
+    font-weight: 600;
+}
+.bmr-row{
+    justify-content: space-between;
+}
+.container-fluid{
+    width: 70%;
+}
+.form-check-input:checked
+{
+    background-color: var(--dark-font);
+    border-color: var(--dark-font);
+}
+
+.form-check-input:focus
+{
+    box-shadow: none;
+}
+
+.bmr-values
+{
+    font-size: calc(16px + (18 - 16)*((100vw - 200px) / (1600 - 200)));
+    color:var(--green);
+
+}
+
+.bmr-value-container{
+    background-color: var(--dark-font);
+    color:white;
+    padding: 20px;
+}
+
+.bmr-text{
+    font-size: calc(16px + (18 - 16)*((100vw - 200px) / (1600 - 200)));
+
+}
