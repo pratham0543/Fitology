@@ -15,10 +15,10 @@
     border-color: var(--dark-font);
 }
 
-.form-check-input:focus
+/* .form-check-input:focus
 {
-    box-shadow: none;
-}
+    color:var(-green);
+} */
 
 .bmr-values
 {

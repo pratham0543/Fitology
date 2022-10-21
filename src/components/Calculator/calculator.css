@@ -30,10 +30,12 @@
     border-bottom: 2px solid black;
 }
 
+
 .calculator .calculator-links ul .calculator-links-li:focus
 {
-    border-bottom: 2px solid black;
+    color: var(--green);
 }
+
 
 /* .calculator .calculator-links ul li:hover{
     border-bottom: 2px solid black;

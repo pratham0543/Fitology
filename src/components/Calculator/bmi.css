@@ -1,0 +1,24 @@
+.bmi-label{
+    font-weight: 600;
+   
+
+}
+
+.bmi-container{
+    width: 60%;
+}
+.bmi-limit{
+    color:white;
+    font-size: calc(12px + (14 - 12)*((100vw - 200px) / (1600 - 200)));
+
+}
+.bmi-value-container{
+    background-color: var(--dark-font);
+    color:white;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.bmi-value-container hr{
+    margin-bottom: 2px;
+}

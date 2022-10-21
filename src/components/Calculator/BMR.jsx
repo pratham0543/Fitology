@@ -44,7 +44,6 @@ class BMR extends Component {
 
   render() {
     return (
-      <form>
         <div className="container-fluid BMR mt-5">
           <div className="row bmr-row">
             <div className="col-5">
@@ -104,13 +103,10 @@ class BMR extends Component {
               <p className='bmr-text'>{this.state.BMR}</p>
               <p className='label-BMR text-end bmr-values'>Maintainence Calories:</p>
               <p className='bmr-text'>{this.state.MC}</p>
-             
+              <p className="text-center">(Add or subtract <span style={{color:"var(--purple)"}}>500</span> from MC to <span style={{color:"var(--green)"}}>GAIN</span> or <span style={{color:"var(--green)"}}>Reduce Weight</span>)</p>
             </div>
           </div>
-
-
         </div>
-      </form>
 
     )
   }
