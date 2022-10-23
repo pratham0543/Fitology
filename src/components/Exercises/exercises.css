@@ -1,4 +1,56 @@
 .exercises{
     text-align: center;
-    width:80%;
+    width:90%;
+}
+
+.exerc-head{
+    font-weight:600;
+}
+.videos-links{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.exercises-card{
+    border: none;
+    background-color: transparent;
+}
+.exercises input{
+    
+    padding: 10px 0px 10px 15px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 20px;
+    border-color: white; 
+}
+.exercises input:focus
+{
+    box-shadow: none;
+    border-color: white;
+}
+
+
+.exercises .input-group-text{
+    background-color: white;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 20px;
+    border-color: white;
+    width:7%;
+    padding: 5px;
+    transition:all 0.5s ease;
+    justify-content: center;
+
+}
+.exercises .input-group-text:hover{
+    background-color: var(--dark-font);
+    color:white;
+}
+.vid-para{
+    font-weight:600 ;
+}
+.video-heading
+{
+    font-weight: 600;
+    color: var(--dark-font);
+    text-transform: capitalize;
+
 }

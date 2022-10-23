@@ -1,8 +1,8 @@
-import Navbar from './navbar/Navbar';
-import './App.css';
-import Footer from './footer/Footer';
-
 import { Component } from 'react';
+import './App.css';
+import Navbar from './navbar/Navbar';
+import Footer from './footer/Footer';
+import Video from './components/Exercises/Video';
 import Home from './components/Home/Home';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import Nutrition from './components/Nutrition/Nutrition';
@@ -13,6 +13,22 @@ import BodyFat from './components/Calculator/BodyFat';
 import Exercises from './components/Exercises/Exercises';
 class App extends Component{
 
+    constructor()
+    {
+      super()
+      this.state={
+        vid:null,
+        vname:null
+      }
+    }
+
+
+
+
+    onClicked=(e)=>
+    {
+      this.setState({vid:e[0],vname:e[1]})
+    }
   render()
   {
     return(
@@ -28,7 +44,9 @@ class App extends Component{
               <Route path='BMI' element={<BMI/>}/>
               <Route path='BodyFat' element={<BodyFat/>}/>
             </Route>
-            <Route path="/exercises" element={<Exercises/>}/>
+            <Route path="/exercises" element={<Exercises clicked={this.onClicked}/>}/>
+            <Route path='/video' element={<Video vid={this.state.vid} vname={this.state.vname}/>}/>
+           
         </Routes>
         <Footer/>
         </BrowserRouter>

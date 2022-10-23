@@ -78,7 +78,6 @@ class Nutrition extends Component {
               <h1>Fitness starts with what you eat</h1>
               <p>Track calories of various foods and get complete nutritional information to hit the right amount of daily calories.</p>
               <div class="input-group">
-
                 <input type="text" className="form-control nutrition-inp" placeholder="Search for foods by their quantity or name" aria-label="Username" aria-describedby="basic-addon1" required/>
                 <span className="input-group-text" id="basic-addon1" onClick={(e)=>this.onSubmitHandler(e)}><i className="fa-solid fa-magnifying-glass"></i></span>
               </div>

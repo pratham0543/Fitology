@@ -9,7 +9,7 @@ class Calculator extends Component {
     render() {
 
         return (
-            <div className="calculator mt-4">
+            <div className="calculator mt-5">
                 <div className="calculator-header">
                     <h1>Calculators</h1>
                     <p>Measure your daily intake of calories, body mass index (BMI), basal metabolic rate (BMR) with our most accurate calculators
