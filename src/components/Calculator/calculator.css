@@ -1,10 +1,10 @@
 .calculator .calculator-header h1{
-    font-size: calc(21px + (35 - 21)*((100vw - 200px) / (1600 - 200)));
+    /* font-size: calc(21px + (35 - 21)*((100vw - 200px) / (1600 - 200))); */
     font-weight:600;
 }
 
 .calculator .calculator-header p{
-    font-size: calc(16px + (18 - 16)*((100vw - 200px) / (1600 - 200)));
+    /* //font-size: calc(16px + (18 - 16)*((100vw - 200px) / (1600 - 200))); */
     
     
 }

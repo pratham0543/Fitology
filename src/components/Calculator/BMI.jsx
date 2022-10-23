@@ -9,10 +9,6 @@ class BMI extends Component {
       category: "_______",
     }
   }
-  onCalBMI=(e)=>{
-      e.preventDefault();
-
-  }
   onBTNClick=()=>{
     const ht=parseFloat(document.querySelector('#bmi-ht').value);
     const wt=parseInt(document.querySelector('#bmi-wt').value);

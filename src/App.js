@@ -10,6 +10,7 @@ import Calculator from './components/Calculator/Calculator';
 import BMR from './components/Calculator/BMR';
 import BMI from './components/Calculator/BMI';
 import BodyFat from './components/Calculator/BodyFat';
+import Exercises from './components/Exercises/Exercises';
 class App extends Component{
 
   render()
@@ -26,7 +27,8 @@ class App extends Component{
               <Route path='BMR' element={<BMR/>}/> 
               <Route path='BMI' element={<BMI/>}/>
               <Route path='BodyFat' element={<BodyFat/>}/>
-              </Route>
+            </Route>
+            <Route path="/exercises" element={<Exercises/>}/>
         </Routes>
         <Footer/>
         </BrowserRouter>

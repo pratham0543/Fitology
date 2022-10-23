@@ -48,7 +48,7 @@ class Navbar extends Component {
                     <div data-bs-dismiss="offcanvas"><a className="nav-link" href="/">Get Transformed</a></div>
                   </li>
                   <li className="nav-item">
-                    <div data-bs-dismiss="offcanvas"><a className="nav-link" href="/">Exercises</a></div>
+                    <div data-bs-dismiss="offcanvas"><Link className="nav-link" to="/exercises">Exercises</Link></div>
                   </li>
                   <li className="nav-item">
                     <div data-bs-dismiss="offcanvas"><a className="nav-link" href="/">Blogs</a></div>

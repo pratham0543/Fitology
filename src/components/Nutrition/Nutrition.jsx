@@ -75,7 +75,7 @@ class Nutrition extends Component {
           </div>
           <div className="nutrition-content animate__animated  animate__fadeInUp">
             <div className="nutrition-text">
-              <h3>Fitness starts with what you eat</h3>
+              <h1>Fitness starts with what you eat</h1>
               <p>Track calories of various foods and get complete nutritional information to hit the right amount of daily calories.</p>
               <div class="input-group">
 
