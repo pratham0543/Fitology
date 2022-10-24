@@ -11,6 +11,8 @@ import BMR from './components/Calculator/BMR';
 import BMI from './components/Calculator/BMI';
 import BodyFat from './components/Calculator/BodyFat';
 import Exercises from './components/Exercises/Exercises';
+import GetTransformed from './components/GetTransformed/GetTransformed';
+import Personalized from './components/Personalized/Personalized';
 class App extends Component{
 
     constructor()
@@ -35,6 +37,7 @@ class App extends Component{
       
      <BrowserRouter>
         <Navbar/>
+     
         <Routes>
             <Route path="/"  element={<Home/>}  />
             <Route path='/nutrition' element={<Nutrition/>} />
@@ -46,7 +49,8 @@ class App extends Component{
             </Route>
             <Route path="/exercises" element={<Exercises clicked={this.onClicked}/>}/>
             <Route path='/video' element={<Video vid={this.state.vid} vname={this.state.vname}/>}/>
-           
+           <Route path='/transformed' element={<GetTransformed/>}/>
+           <Route path='/contactUs' element={<Personalized/>}/>
         </Routes>
         <Footer/>
         </BrowserRouter>

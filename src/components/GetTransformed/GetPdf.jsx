@@ -1,0 +1,16 @@
+import React from 'react'
+
+const GetPdf = (props) => {
+  return (
+    <a href={props.pdf} target="_blank" rel="noopener noreferrer"> <div class="card mt-3" style={{width: "18rem"}}>
+    <div className='iframe-card' style={{overflow:"hidden"}}>
+            <embed src={props.pdf  + `#toolbar=0`} frameBorder="0" className='iframe-pdf'  title='pdf viewer'  allowtransparency="true"  ></embed>
+    </div>            
+        <div class="card-body">
+            <h5 class="card-title"><i className="fa-solid fa-file-pdf me-2 file-icon"></i><span>{props.name}</span></h5>
+        </div>
+</div></a>
+  )
+}
+
+export default GetPdf

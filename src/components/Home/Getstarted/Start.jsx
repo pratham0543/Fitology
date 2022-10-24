@@ -1,5 +1,6 @@
 import './start.css'
 import fit from "./fitness.png"
+import { Link } from 'react-router-dom'
 const Start=()=>
 {
     return(
@@ -11,7 +12,7 @@ const Start=()=>
                     <p className='mx-auto pt-0'> Goals are meant to be achieved, records are meant to be broken.
                     Be it any goal muscle building,fat loss,weight loss or just maintenence we have the right guidance on how to 
                     achieve and shape your body.</p>
-                <button type="button" className="btn btn-dark start_btn rounded">GET STARTED</button>
+                <Link to="/nutrition"><button type="button" className="btn btn-dark start_btn rounded">GET STARTED</button></Link>
                 </div>
             </div>
         

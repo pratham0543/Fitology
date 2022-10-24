@@ -40,7 +40,7 @@
 .footer .footer-content .footer_links ul li:hover {
   color:white !important;
 }
-.footer .footer-content .footer_links  a{
+.footer .footer-content .footer_links  span{
   color:white;
 }
 
@@ -78,7 +78,12 @@
   font-size:14px
 }
 
-
+.footer-anchor{
+  color:var(--dark-font) !important;
+}
+/* .footer-anchor:focus{
+  color: var(--dark-font);
+} */
 
 @media screen and (max-width:768px)
 {
@@ -100,7 +105,8 @@
     font-size: calc(16px + (20 - 16)*((100vw - 200px) / (1600 - 200)));
     height:40px;
   }
-
+  
+  
 }
 @media screen and (max-width:500px)
 {

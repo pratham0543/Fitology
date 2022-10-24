@@ -45,19 +45,16 @@ class Navbar extends Component {
                     <div data-bs-dismiss="offcanvas"><Link className="nav-link" to="/nutrition" >Nutrition</Link></div>
                   </li>
                   <li className="nav-item">
-                    <div data-bs-dismiss="offcanvas"><a className="nav-link" href="/">Get Transformed</a></div>
+                    <div data-bs-dismiss="offcanvas"><Link className="nav-link" to="transformed">Transformation Plan</Link></div>
                   </li>
                   <li className="nav-item">
                     <div data-bs-dismiss="offcanvas"><Link className="nav-link" to="/exercises">Exercises</Link></div>
                   </li>
                   <li className="nav-item">
-                    <div data-bs-dismiss="offcanvas"><a className="nav-link" href="/">Blogs</a></div>
-                  </li>
-                  <li className="nav-item">
                     <div data-bs-dismiss="offcanvas"><Link to='/calcu' className="nav-link" >Calculators</Link></div>
                   </li>
                   <li className="nav-item">
-                   <div data-bs-dismiss="offcanvas"> <a className="nav-link" href="/">Contact Us</a></div>
+                   <div data-bs-dismiss="offcanvas"> <Link className="nav-link" to='/contactUs'>Personalized Plan</Link></div>
                   </li>
                 </ul>
               </div>

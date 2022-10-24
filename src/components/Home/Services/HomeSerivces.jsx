@@ -12,9 +12,9 @@ function HomeServices(){
                 <p className="homeservices-subheading2">We give you the right features to hit your goals.</p>
                 <div className="item-container">
 
-                <Servicesitem  classname="item1" imageurl={img1} headingcontent="TRANSFORMATION PLAN" buttoncontent="GET NOW >"/>
-                <Servicesitem  classname="item2" imageurl={img2} headingcontent="EXERCISE TUTORIAL" buttoncontent="VIEW NOW >"/>
-                <Servicesitem classname="item3" imageurl={img3} headingcontent="HEALTH CALCULATOR" buttoncontent="USE NOW >"/>
+                <Servicesitem  classname="item1" imageurl={img1} headingcontent="TRANSFORMATION PLAN" buttoncontent="GET NOW >" path="/transformed"/>
+                <Servicesitem  classname="item2" imageurl={img2} headingcontent="EXERCISE TUTORIAL" buttoncontent="VIEW NOW >" path="/exercises"/>
+                <Servicesitem classname="item3" imageurl={img3} headingcontent="HEALTH CALCULATOR" buttoncontent="USE NOW >" path="/calcu"/>
                 </div>
                 </div>
             

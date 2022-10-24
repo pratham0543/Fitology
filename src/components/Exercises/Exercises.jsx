@@ -50,7 +50,7 @@ class Exercises extends Component {
             )
         }
         return (
-            <div className="container-fluid exercises mt-5">
+            <div className="container-fluid exercises mt-5 animate__animated animate__fadeInUp">
                 <h1 className="exerc-head">Search Exercises</h1>
                 <p>Learn how to perform exercises using correct technique. Search different exercises based on name of any muscle group. Our database has a wide variety of exercises wirth written as well as video demonstration</p>
                 <div class="input-group">

@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 const FootElements=(props)=>
 {
     return(
-        <li className="mb-3">
+        <>
+        <Link to={props.path}><li className="mb-3">
             <i className={props.icon}></i>
-        <a className="ms-2">{props.text}</a>
-      </li>
+        <span className="ms-2">{props.text}</span>
+      </li></Link>
+      </>
     )
 }
 export default FootElements;

@@ -1,0 +1,31 @@
+.trans-head{
+    font-weight:600;
+    /* overflow: hidden; */
+}
+.iframe-pdf{
+    /* overflow-y:hidden;  */
+    object-position: 50% 50%;
+  
+
+}
+.trans-subheading
+{
+    font-weight: 600;
+}
+
+.card-title{
+    color: var(--dark-font);
+
+}
+.file-icon
+{
+    color: #EA4335;
+}
+.wt-gain{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.d17{
+    height: 40vh;
+}

@@ -1,0 +1,9 @@
+.contact-div h1{
+    color:var(--dark-font);
+    font-weight: 600;
+}
+
+.contact-div label{
+    color: var(--dark-font);
+    font-weight: 600;
+}

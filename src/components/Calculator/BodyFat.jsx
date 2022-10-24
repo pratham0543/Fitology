@@ -6,7 +6,6 @@ class BodyFat extends Component{
       bfat: 0,
       color: "",
       category: "_______",
-      lbm:0
     }
   }
 onBFCalc=()=>{
@@ -17,31 +16,58 @@ onBFCalc=()=>{
     if(!isNaN(fBMI)){
       const BMI=fBMI.toFixed(2);
       let BF=0;
+      
       if (document.querySelector('input[name="gender"]:checked').value === 'Male') {
         BF = (1.20 * BMI) + (0.23 *age) - 16.2
+        if(BF>=2 && BF<=5)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--purple)",category:"Essential Fat"});
+        }  
+        else if(BF<=13)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--green)",category:"Athlete"});
+        }
+        else if(BF<=17)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--green)",category:"Fitness"});
+        }
+        else if(BF<=24)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--purple)",category:"Average"});
+        }
+        else if(BF>=25)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"red",category:"Obese"})
+        }
+        
         
       }
       else {
         BF = (1.20 * BMI) + (0.23 *age)  - 5.4
+        if(BF>=10 && BF<=13)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--purple)",category:"Essential Fat"});
+        }  
+        else if(BF<=20)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--green)",category:"Athlete"});
+        }
+        else if(BF<=24)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--green)",category:"Fitness"});
+        }
+        else if(BF<=31)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"var(--purple)",category:"Average"});
+        }
+        else if(BF>=32)
+        {
+          this.setState({bfat:BF.toFixed(2),color:"red",category:"Obese"});
+
+        }
       }
-      this.setState({bfat:BF.toFixed(2)});
-      let LBM=wt-BF;
-      // if(BMI<=18.5)
-      // {
-      //   this.setState({BMI:BMI,color:"var(--purple)",category:"UNDERWEIGHT"});
-      // }  
-      // else if(BMI<=25)
-      // {
-      //   this.setState({BMI:BMI,color:"var(--green)",category:"NORMAL"});
-      // }
-      // else if(BMI<=30)
-      // {
-      //   this.setState({BMI:BMI,color:"red",category:"OVERWEIGHT"});
-      // }
-      // else if(BMI>40)
-      // {
-      //   this.setState({BMI:BMI,color:"red",category:"OBESE"});
-      // }
+     
+      
   }
 }
 
@@ -93,11 +119,9 @@ onBFCalc=()=>{
           <p className='label-BMR text-end bmr-values'>Body Fat%</p>
           <p className='bmr-text'>{this.state.bfat}</p>
         </div>
-          <p className='label-BMR text-end bmr-values'>Lean Body Mass</p>
-          <p className='bmr-text text-end'>{this.state.lbm}</p>
         <div className="row">
           <div className="col">
-          <p className="text-center">You are <span style={{color:`${this.state.color}`}}>{this.state.category}</span></p>
+          <p className="text-center">You are in &nbsp;<span style={{color:`${this.state.color}`}}>{this.state.category} &nbsp;</span>category</p>
           </div>
         </div>
         <hr />
