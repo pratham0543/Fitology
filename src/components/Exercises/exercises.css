@@ -4,7 +4,7 @@
 }
 
 .exerc-head{
-    font-weight:600;
+    font-weight:500;
 }
 .videos-links{
     display: flex;
@@ -45,11 +45,11 @@
     color:white;
 }
 .vid-para{
-    font-weight:600 ;
+    font-weight:500 ;
 }
 .video-heading
 {
-    font-weight: 600;
+    font-weight: 500;
     color: var(--dark-font);
     text-transform: capitalize;
 
