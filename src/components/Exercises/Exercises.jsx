@@ -43,8 +43,8 @@ class Exercises extends Component {
             </div>)
         if (this.state.videos !== null && this.state.showLoader === false) {
             video=(
-                this.state.videos.map((vid)=>
-                <Link className="nav-link"  to="/video" onClick={()=>this.props.clicked([vid.id.videoId,this.state.vname])}><Nvideos url={vid.snippet.thumbnails.high.url} desc={vid.snippet.description} title={vid.snippet.title} key={vid.id.videoId}/>
+                this.state.videos.map((vid,index)=>
+                <Link className="nav-link" key={vid.id.videoId}  to="/video" onClick={()=>this.props.clicked([vid.id.videoId,this.state.vname])}><Nvideos url={vid.snippet.thumbnails.high.url} desc={vid.snippet.description} title={vid.snippet.title} key={vid.id.videoId}/>
                </Link>
                 )
             )

@@ -42,7 +42,7 @@ const Footer = () => {
             <div className="input-group mb-3">
            
                 <input type="text" className="form-control p-2 rounded-start" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2" />
-                <button className="btn " type="button" id="button-addon2"><a className="footer-anchor"href="/contactUs"><i class="fa-solid fa-arrow-right "></i></a></button>
+                <button className="btn " type="button" id="button-addon2"><a className="footer-anchor"href="/contactUs"><i className="fa-solid fa-arrow-right "></i></a></button>
   
             </div>
           </div>
@@ -53,7 +53,7 @@ const Footer = () => {
 
       <hr />
       <div id="copyright text-center">
-        <p id="footer-para" className="text-muted text-center">All Rights Reserved | Copyright <i class="fa-regular fa-copyright"></i> <span style={{ color: "var(--purple)" }}>Fitology 2022</span> <i class="fa-solid fa-copyright"></i></p>
+        <p id="footer-para" className="text-muted text-center">All Rights Reserved | Copyright <i className="fa-regular fa-copyright"></i> <span style={{ color: "var(--purple)" }}>Fitology 2022</span> <i className="fa-solid fa-copyright"></i></p>
       </div>
     </div>)
 }

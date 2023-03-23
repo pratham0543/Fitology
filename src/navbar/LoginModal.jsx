@@ -1,30 +1,47 @@
-const LoginModal=()=>{
-    return(
-        <div className="modal fade" id="ModalForm" aria-labelledby="ModalFormLabel" aria-hidden="true">
-            <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content">
-                <div className="modal-body">
-                    <button type="button" className="btn-close btn-close-white close-button" aria-label="Close"><a href="./Navbar.jsx"></a></button>
-                    <div className="myform">
-                        <h1 className="text-center">Login Form</h1>
-                        <form>
-                            <div className="mb-3 mt-4">
-                                <label htmlFor="exampleInputEmail1" className="form-label">Email address</label><br />
-                                <input type="email" className="myinput" aria-describedby="emailHelp"/>
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
-                                <input type="password" className="myinput"/>
-                            </div>
-                            <button type="submit" className="btn btn-light mt-3" >LOGIN</button>
-                            <p className="login_para">Not a member? <a href="#">Signup now</a></p>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            </div>
+import React from 'react'
+import { Modal } from 'react-bootstrap'
+import CloseButton from 'react-bootstrap/CloseButton';
+const LoginModal = (props) => {
+
+    const logIn=()=>
+    {
+        //apply validations
+        const email=document.querySelector('#email').value;
+        const password=document.querySelector('#password').value;
+        
+        props.login(email,password);
+    
+    }
+
+
+  return (
+    <Modal show={props.show} centered>
+    <Modal.Header >
+        <Modal.Title>Login  <CloseButton className="close-btn" onClick={props.hide}/> </Modal.Title>
+    </Modal.Header>
+    <Modal.Body  className="navbar-modal">
+        <div className="mb-3">
+            <label htmlFor="email" >Email</label>
+            <input type="email" className="form-control" id="email" placeholder="abc@example.com"/>
         </div>
-    )
+
+        <div className="mb-3">
+            <label htmlFor="password" >Password</label>
+            <input type="password" className="form-control" id="password" placeholder=""/>
+        </div>
+
+    </Modal.Body>
+    <Modal.Footer>
+        
+        <button className="btn btn-primary  text-end signup-btn" onClick={logIn}>
+           Login
+        </button>
+        <p className='text-danger signUpInfo'>
+            {props.info}
+        </p>
+    </Modal.Footer>
+</Modal>
+  )
 }
 
-export default LoginModal;
+export default LoginModal

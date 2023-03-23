@@ -1,11 +1,106 @@
 import './navbar.css';
+import SignUp from './SignUpModal';
 import LoginModal from './LoginModal';
 import { Component } from 'react';
 import { Link } from 'react-router-dom'
-
+import axios from 'axios';
+// import Modal from 'react-bootstrap/Modal';
 class Navbar extends Component {
+   constructor(props)
+   {
+    super(props)
+    this.state={
+      signShow:false,
+      loginShow:false,
+      signInfo:"",
+      loginInfo:"",
+      userName:"",
+      showLoader:false
+    }
+   }
 
+    signShow=()=>this.setState({signShow:true});
+    signUp=(name,number,email,password)=>
+    {
+
+      const newUser={
+        name:name,
+        number:number,
+        email:email,
+        password:password
+      }
+      // Call api for signup and start the session
+      axios.post('http://localhost:5000/signup',newUser)
+      .then(response=>{
+        console.log(response.data);
+        this.setState({signShow:false})
+        this.login(newUser.email,newUser.password)
+      })
+      .catch(err=>{
+        console.log(err.response.data.mes)
+        this.setState({signInfo:err.response.data.mes})
+      })
+      
+      
+      //console.log("signup successful",name,number,email,password);
+
+
+    }
+    signLogin=()=>
+    {
+      this.setState({signShow:false,loginShow:true})
+    }
+
+
+    //login method to start a session
+    login=(email,password)=>
+    {
+      //call api and start session fro login 
+        const user={
+          email:email,
+          password:password
+        }
+        this.setState({showLoader:true})
+        axios.post('http://localhost:5000/login',user)
+        .then(result=>
+          {
+              this.setState({userName:result.data.username,loginInfo:result.data.username,showLoader:false,loginShow:false})
+          }
+        )
+        .catch(err=>{
+            console.log(err.response.data)
+            this.setState({loginInfo:err.response.data.mes,showLoader:false})
+        }
+            )
+
+        // axios.get('http://localhost:5000/login')
+        // .then(result=>
+        //   console.log(result)
+        //   )
+        //   .catch(err=>console.log(err))
+
+      // console.log("Login successfull");
+      //this.setState({loginShow:false});
+    }
+    logout=()=>
+    {
+      this.setState({userName:""})
+    }
+  
   render() {
+              let loginBtn= <button type="button" id="login-btn" className="btn btn-primary login-button" onClick={this.signShow}>Login/Sign Up</button>
+
+          if(this.state.showLoader)
+          {
+              loginBtn=(<div className="">
+              <div className="spinner-border text-dark" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>)
+          }
+          else if(this.state.userName!==""){
+            loginBtn=<p className='username'><span>Welcome, {this.state.userName} |</span><span className='text-primary logout-btn' onClick={this.logout}> Logout </span>   </p>
+          }
 
     return (
       <div className="main">
@@ -15,12 +110,15 @@ class Navbar extends Component {
 
               <h2> <i className="fa-solid fa-dumbbell me-2"></i> FITOLOGY</h2>
             </a>
-            <button type="button" id="login-btn" className="btn btn-primary login-button" data-bs-toggle="modal" data-bs-target="#ModalForm">Login/Sign Up</button>
+           {loginBtn}
 
-            {/* login modal */}
-            {LoginModal}
-            {/* <LoginModal />}}
-            {/* login modal finished */}
+            {/* Modal react bootstrap */}
+           
+            <SignUp signUp={(name,number,email,password)=>this.signUp(name,number,email,password)} show={this.state.signShow} signLogin={this.signLogin} hide={()=>{this.setState({signShow:false})}}  info={this.state.signInfo}/>
+
+      {/* Model end */}
+                <LoginModal login={(email,pass)=>this.login(email,pass)} show={this.state.loginShow} hide={()=>{this.setState({loginShow:false})}} info={this.state.loginInfo}></LoginModal>
+
           </div>
         </nav>
         <nav className="navbar navbar-expand-lg nav-content">
@@ -59,7 +157,7 @@ class Navbar extends Component {
                 </ul>
               </div>
               <div className="offcanvasFooter">
-                <p className="text-muted ">All Rights Reserved | Copyright <i class="fa-regular fa-copyright"></i> <span style={{ color: "var(--purple)" }}>Fitology 2022</span> <i class="fa-solid fa-copyright"></i></p>
+                <p className="text-muted ">All Rights Reserved | Copyright <i className="fa-regular fa-copyright"></i> <span style={{ color: "var(--purple)" }}>Fitology 2022</span> <i className="fa-solid fa-copyright"></i></p>
 
               </div>
             </div>
