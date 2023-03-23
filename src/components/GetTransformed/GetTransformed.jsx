@@ -5,9 +5,9 @@ import GetPdf from './GetPdf'
 import hwork from './HOME-WORKOUT-SERIES.pdf'
 import wgwl from './WEIGHT-GAIN-WEIGTH-LOSS.pdf'
 import wl from './WEIGHT-LOSS.pdf'
-import d16 from './wt-loss-1600.jpeg'
-import d17 from './wt-loss-1700.jpeg'
-import d172 from './wt-loss-1700-2.jpeg'
+import d16 from './wt-loss-1600.jpg'
+import d17 from './wt-loss-1700.jpg'
+import d172 from './wt-loss-1700-2.jpg'
 
 
 function GetTransformed() {
@@ -40,22 +40,22 @@ function GetTransformed() {
             </h3>
                 <hr />
                 <div className="wt-gain mt-2 mb-5">
-                    <div class="card mt-3" style={{width: "18rem"}}>
-                        <img src={d16} class="card-img-top" alt="..."/>
-                        <a href={d16} target="_blank" rel="noopener noreferrer"> <div class="card-body">
-                                <p class="card-title">1600 Calories Weight Loss Plan</p>
+                    <div className="card mt-3" style={{width: "18rem"}}>
+                        <img src={d16} className="card-img-top" alt="..."/>
+                        <a href={d16} target="_blank" rel="noopener noreferrer"> <div className="card-body">
+                                <p className="card-title">1600 Calories Weight Loss Plan</p>
                             </div></a>
                     </div>
-                    <div class="card mt-3 " style={{width: "18rem"}}>
-                        <img src={d17} class="card-img-top d17" alt="..." />
-                        <a href={d17} target="_blank" rel="noopener noreferrer"><div class="card-body">
-                            <p class="card-title">1700 Calories Weight Loss Plan</p>
+                    <div className="card mt-3 " style={{width: "18rem"}}>
+                        <img src={d17} className="card-img-top d17" alt="..." />
+                        <a href={d17} target="_blank" rel="noopener noreferrer"><div className="card-body">
+                            <p className="card-title">1700 Calories Weight Loss Plan</p>
                             </div></a>
                     </div>
-                    <div class="card mt-3" style={{width: "18rem"}}>
-                        <img src={d172} class="card-img-top" alt="..."/>
-                        <a href={d172} target="_blank" rel="noopener noreferrer"> <div class="card-body">
-                           <p class="card-title"> 1700 Calories Weight Loss Plan</p>
+                    <div className="card mt-3" style={{width: "18rem"}}>
+                        <img src={d172} className="card-img-top" alt="..."/>
+                        <a href={d172} target="_blank" rel="noopener noreferrer"> <div className="card-body">
+                           <p className="card-title"> 1700 Calories Weight Loss Plan</p>
                             </div></a>
                     </div>
                 </div>
